@@ -3,22 +3,30 @@ This is an Laravel application that is using
 - sb-admin-2 templates
 - geoip-2.0 library
 
-Setup and workflow:
+Setup:
 
 1. Clone the github repository.
 2. Run \
     `composer install`  
     and \
     `composer update`
-3. Create database and add credentials to the .env file
-4. Run \
-    `php artisan migrate`
+3. Run:
+    `git clone https://github.com/BlackrockDigital/startbootstrap-sb-admin-2.git public/templates/sb-admin-2`
+    `cd public/templates/sb-admin-2`
+    `git checkout tags/v3.3.7+1`
+    `git checkout -b v3.3.7+1`    
+4. Create database and add credentials to the .env file
 5. Run \
+    `php artisan migrate`
+6. Run \
     `php artisan serve`
-6. Visit URL given by the previous command
-7. Register new user and refresh the page a couple of times
-8. Logout
-9. Run \
+
+Workflow:
+
+1. Visit URL given by the previous command
+2. Register new user and refresh the page a couple of times
+3. Logout
+4. Run \
     `php artisan create:admin`
-10. Login as admin with given credentials
-11. Click on the "Check the website statistics" button 
+5. Login as admin with given credentials
+6. Click on the "Check the website statistics" button 
