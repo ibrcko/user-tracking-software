@@ -18,3 +18,13 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/admin', 'AdminController@index')->name('admin');
+
+Route::get('/agent/{visitId}', 'AdminController@agent')->name('agent');
+
+Route::get('/referer/{visitId}', 'AdminController@referer')->name('referer');
+
+Route::get('/cookie/{visitId}', 'AdminController@cookie')->name('cookie');
+
+Route::get('/logs/{visitId}', 'AdminController@logs')->name('logs');

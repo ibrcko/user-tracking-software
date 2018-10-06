@@ -10,7 +10,7 @@ return [
     /*
      * Enable cache?
      */
-    'cache_enabled' => true,
+    'cache_enabled' => false,
 
     /*
      * Deffer booting for middleware use
@@ -181,7 +181,7 @@ return [
      *     sudo apt-get purge php5-geoip
      *
      */
-    'log_geoip' => false,
+    'log_geoip' => true,
 
     /*
      * Do you wish to log the user agent?
@@ -248,7 +248,7 @@ return [
      * ** IMPORTANT **
      *   Change the user model to your own.
      */
-    'user_model' => 'PragmaRX\Tracker\Vendor\Laravel\Models\User',
+    'user_model' => 'App\User',
 
     /*
      * You can use your own model for every single table Tracker has.
