@@ -181,7 +181,7 @@ return [
      *     sudo apt-get purge php5-geoip
      *
      */
-    'log_geoip' => true,
+    'log_geoip' => false,
 
     /*
      * Do you wish to log the user agent?
